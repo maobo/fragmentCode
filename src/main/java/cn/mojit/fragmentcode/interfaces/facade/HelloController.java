@@ -1,4 +1,4 @@
-package cn.mojit.fragmentcode.web;
+package cn.mojit.fragmentcode.interfaces.facade;
 
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
