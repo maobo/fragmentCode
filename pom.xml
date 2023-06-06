@@ -5,8 +5,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.0.6</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>2.6.2</version>
+		<relativePath/>
 	</parent>
 	<groupId>cn.mojit</groupId>
 	<artifactId>fragmentCode</artifactId>
@@ -40,6 +40,67 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 		</dependency>
+
+		<!--移除Tomcat依赖-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-web</artifactId>-->
+<!--			<exclusions>-->
+<!--				<exclusion>-->
+<!--					<groupId>org.springframework.boot</groupId>-->
+<!--					<artifactId>spring-boot-starter-tomcat</artifactId>-->
+<!--				</exclusion>-->
+<!--			</exclusions>-->
+<!--		</dependency>-->
+		<!--引入undertow-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-undertow</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>31.1-jre</version>
+		</dependency>
+
+		<!-- 谷歌二维码 -->
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>core</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.zxing</groupId>
+			<artifactId>javase</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.barcode4j</groupId>
+			<artifactId>barcode4j</artifactId>
+			<version>2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.noear</groupId>
+			<artifactId>snack3</artifactId>
+			<version>3.1.18</version>
+		</dependency>
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>5.7.21</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+
+
 	</dependencies>
 
 	<build>
